@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const API_URL = "http://localhost:8800";
-
+// export const API_URL = "http://localhost:8800";
+export const API_URL = "https://writewave-wql1.onrender.com";
 export const getGoogleSignUp = async (accessToken) => {
     try{
         const user = await axios
