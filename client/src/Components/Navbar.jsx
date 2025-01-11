@@ -55,7 +55,9 @@ const MobileMenu = ({ user, signOut }) => {
       {isMenuOpen && (
         <div className="fixed top-0 left-0 w-full h-fit bg-white dark:bg-[#020b19] z-50 flex flex-col py-10 items-center justify-center shadow-xl gap-8">
           <Logo />
-          <Link to="/admin">
+          {/* <Link to="/admin"> */}
+         
+        <Link to="https://writewave-admin.onrender.com/">
             <Button
               label="Go to Writer's Section"
               styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white text-white px-4 py-1.5 rounded-full"
@@ -156,7 +158,8 @@ const Navbar = () => {
 
       <Logo />
       <div className="hidden md:flex gap-14 items-center">
-        <Link to="http://localhost:3001/">
+        {/* <Link to="http://localhost:3001/"> */}
+        <Link to="https://writewave-admin.onrender.com/">
           <Button
             label="Go to Writer's Section"
             styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white px-4 py-1.5 rounded-full"
