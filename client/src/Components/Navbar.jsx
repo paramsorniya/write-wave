@@ -57,7 +57,7 @@ const MobileMenu = ({ user, signOut }) => {
           <Logo />
           <Link to="/admin">
             <Button
-              label="Become a Writer"
+              label="Go to Writer's Section"
               styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white text-white px-4 py-1.5 rounded-full"
             />
           </Link>
@@ -158,7 +158,7 @@ const Navbar = () => {
       <div className="hidden md:flex gap-14 items-center">
         <Link to="http://localhost:3001/">
           <Button
-            label="Become a Writer"
+            label="Go to Writer's Section"
             styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white px-4 py-1.5 rounded-full"
           />
         </Link>
