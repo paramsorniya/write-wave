@@ -11,6 +11,7 @@ import {
   import React from "react";
   import { AiOutlineLogout } from "react-icons/ai";
   import { BiMenu } from "react-icons/bi";
+  
   import {
     FaFacebook,
     FaInstagram,
@@ -155,6 +156,8 @@ import {
         </div>
   
         <Logo type="signin" />
+        
+
   
         <div className='flex gap-14 items-center'>
           <div className='flex gap-2 items-center'>

@@ -13,6 +13,8 @@ import {
   rem,
   useMantineColorScheme,
 } from "@mantine/core";
+import Button1 from "./Button1";
+import { Link } from "react-router-dom";
 import { IconSun, IconMoon } from "@tabler/icons-react";
 import { BsPencilSquare } from "react-icons/bs";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -78,6 +80,12 @@ const Sidebar = ({ close = () => {} }) => {
       <Stack justify='center' gap={10}>
         {links}
       </Stack>
+      <Link to="https://writewave-client.onrender.com/">
+      <Button1
+              label="Go to Blogs Section"
+              styles="flex items-center justify-center bg-rose-600 text-white dark:text-white text-white px-4 py-1.5 rounded-full"
+            />
+            </Link>
 
       <ActionIcon
         onClick={() =>

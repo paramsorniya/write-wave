@@ -64,13 +64,22 @@ const WritePost = () => {
     }
 
     const slug = createSlug(title);
-
+    setLoading(true);
     mutate({
       title,
       slug,
       cat: category,
       img: fileURL,
       desc: editor.getHTML(),
+
+      
+        onSuccess: () => {
+          setLoading(false); // Hide loader on success
+        },
+        onError: () => {
+          setLoading(false); // Hide loader on error
+        },
+      
     });
   };
 
@@ -209,12 +218,19 @@ const WritePost = () => {
       </RichTextEditor>
 
       <div className='w-full flex items-end justify-end mt-6'>
-        <Button
-          className={theme ? "bg-blue-600" : "bg-black"}
-          onClick={() => handleSubmit()}
-        >
-          Submit Post
-        </Button>
+      <Button
+      className={`flex items-center justify-center ${
+        theme ? "bg-blue-600" : "bg-black"
+      } text-white`}
+      onClick={handleSubmit}
+      disabled={loading} // Disable button during loading
+    >
+      {loading ? (
+        <span className="loader border-2 border-t-2 border-white rounded-full w-4 h-4 animate-spin"></span> // Loader spinner
+      ) : (
+        "Submit Post"
+      )}
+    </Button>
       </div>
 
       {/* <Loading visible={isPending} /> */}
