@@ -80,7 +80,7 @@ const Sidebar = ({ close = () => {} }) => {
       <Stack justify='center' gap={10}>
         {links}
       </Stack>
-      <Link to="https://writewave-client.onrender.com/">
+      <Link to="https://writewave-client.netlify.app/">
       <Button1
               label="Go to Blogs Section"
               styles="flex items-center justify-center bg-rose-600 text-white dark:text-white text-white px-4 py-1.5 rounded-full"

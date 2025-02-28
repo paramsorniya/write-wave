@@ -57,7 +57,7 @@ const MobileMenu = ({ user, signOut }) => {
           <Logo />
           {/* <Link to="/admin"> */}
          
-        <Link to="https://writewave-admin.onrender.com/">
+        <Link to="https://writewave-admin.netlify.app/">
             <Button
               label="Go to Writer's Section"
               styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white text-white px-4 py-1.5 rounded-full"
@@ -159,7 +159,7 @@ const Navbar = () => {
       <Logo />
       <div className="hidden md:flex gap-14 items-center">
         {/* <Link to="http://localhost:3001/"> */}
-        <Link to="https://writewave-admin.onrender.com/">
+        <Link to="https://writewave-admin.netlify.app/">
           <Button
             label="Go to Writer's Section"
             styles="flex items-center justify-center bg-black dark:bg-rose-600 text-white dark:text-white px-4 py-1.5 rounded-full"
