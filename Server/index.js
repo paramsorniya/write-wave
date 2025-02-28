@@ -31,7 +31,7 @@ const allowedOrigins = [
   "https://writewave-admin.onrender.com",
   "https://writewave-client.onrender.com", // Add your client domain here
   "https://writewave-client.netlify.app",
-  "https://writewave-writer.netlify.app",
+  "https://writewave-admin.netlify.app",
 
 ];
 
