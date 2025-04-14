@@ -3,7 +3,7 @@ import { CATEGORIES } from "../utils/dummyData";
 import {PopularWriter, PopularPost, Banner,Card, Pagination } from "../Components";
 import { Link } from "react-router-dom";
 import { usePopularPosts, usePosts } from "../hooks/post-hook";
-
+import AdComponent from "../Components/AdComponent";
 const Home = () => {
   const {posts, numOfPages, setPage} = usePosts({writerId:""});
 
@@ -39,6 +39,9 @@ const handlePageChange =(val) => {
               </Link>
             ))}
           </div>
+          <div className="my-4">
+    <AdComponent />
+  </div>
         </div>
         {/* Blog Post */}
         <div className="w-full flex flex-col md:flex-row gap-10 2xl:gap-20">

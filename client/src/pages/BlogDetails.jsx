@@ -7,6 +7,7 @@ import useStore from "../Store";
 
 import { getSinglePost } from "../utils/apiCalls";
 import { usePopularPosts } from "../hooks/post-hook";
+import AdComponent from "../Components/AdComponent";
 
 const BlogDetails = () => {
 
@@ -84,6 +85,10 @@ const popular = usePopularPosts();
       <div className='w-full flex flex-col md:flex-row gapx-10 2xl:gap-x-28 mt-10'>
         {/* LEFT */}
         <div className='w-full md:w-2/3 flex flex-col text-black dark:text-gray-500 '>
+        <div className="my-6">
+    <AdComponent />
+  </div>
+
           {post?.desc && (
             <Markdown
               options={{ wrapper: "article" }}
