@@ -10,12 +10,14 @@ const AdComponent = () => {
   }, []);
 
   return (
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-7523579640974874"
-    data-ad-slot="7157993183"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
+    <ins
+      className="adsbygoogle"
+      style={{ display: "block" }}
+      data-ad-client="ca-pub-7523579640974874"
+      data-ad-slot="7157993183"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
   );
 };
 
