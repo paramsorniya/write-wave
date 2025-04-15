@@ -85,7 +85,7 @@ const popular = usePopularPosts();
       <div className='w-full flex flex-col md:flex-row gapx-10 2xl:gap-x-28 mt-10'>
         {/* LEFT */}
         <div className='w-full md:w-2/3 flex flex-col text-black dark:text-gray-500 '>
-        <div className="my-6 w-full">
+        <div className="my-8 w-full px-4 md:px-0">
   <AdComponent />
 </div>
 

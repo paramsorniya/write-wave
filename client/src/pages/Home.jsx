@@ -39,7 +39,7 @@ const handlePageChange =(val) => {
               </Link>
             ))}
           </div>
-          <div className="my-4 w-full">
+          <div className="my-8 w-full px-4 md:px-0">
   <AdComponent />
 </div>
 
