@@ -39,9 +39,10 @@ const handlePageChange =(val) => {
               </Link>
             ))}
           </div>
-          <div className="my-4">
-    <AdComponent />
-  </div>
+          <div className="my-4 w-full">
+  <AdComponent />
+</div>
+
         </div>
         {/* Blog Post */}
         <div className="w-full flex flex-col md:flex-row gap-10 2xl:gap-20">
